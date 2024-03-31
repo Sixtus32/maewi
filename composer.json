@@ -1,0 +1,19 @@
+{
+    "name": "sixtus/maewi",
+    "description": "Una plataforma para la gestión de eventos y planes",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sixtus\\Maewi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sixtus Nosike",
+            "email": "sixtuswork18@gmail.com"
+        }
+    ],
+    "minimum-stability": "RC",
+    "require": {}
+}

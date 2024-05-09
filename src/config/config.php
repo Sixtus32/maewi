@@ -10,23 +10,20 @@
  *  Configuraciones genéricas.
  */
 // Nuestras URLs
-
 define("PUBLIC_URL", "/maewi_dev/public/");
+define("LOCAL_URL", "file:///C:/xampp/htdocs/maewi_dev/src/");
 define("BASE_URL", "/maewi_dev/");
 define('URL', 'http://127.0.0.1/maewi_dev');
 define("BASE_URL_DEV", "http://127.0.0.1/maewi_dev/public/");
 
-
-
-define("BASE_URL_PRE", "http://127.0.0.1/maewi/_pre");
-define("BASE_URL_PRO", "http://127.0.0.1/maewi/_pro");
+define("BASE_URL_PRE", "http://127.0.0.1/maewi_pre");
+define("BASE_URL_PRO", "http://127.0.0.1/maewi_pro");
 define("SITE_URL", "maewi.com/");
 define("ADMIN_URL", "admin.maewi.com/");
 define("BLOG_URL", "blog.maewi.com/");
 define("POLICY_URL", "policy.maewi.com/");
 define("HELP_URL", "help.maewi.com/");
 define("ERROR_404_URL", "src/pages/404.php");
-
 
 // Base de Datos
 define("DB_HOST", 'localhost');     // Host del servidor MySQL
@@ -37,9 +34,9 @@ define("DB_CHARSET", "utf8");       // Caracteres Encode
 
 // Configuración de rutas de directorios y ficheros
 define("MODELS_FOLDER",  "models/");
-define("VIEWS_FOLDER", "views/");
-define("TEMPLATES_FOLDER", "templates/");
-define("PARCIALS_FOLDER", "partials/");
+define("VIEWS_FOLDER", LOCAL_URL . "views/");
+define("TEMPLATES_FOLDER", LOCAL_URL . "views/template/");
+define("PARCIALS_FOLDER", LOCAL_URL . "views/partials/");
 define("CONTROLLERS_FOLDER", "controllers/");
 define("AUTOLOADER_FILE", "config/app/autoload.php");
 define("CONFIG_FILE", "config/config.php");

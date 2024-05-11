@@ -34,12 +34,19 @@ define("DB_CHARSET", "utf8");       // Caracteres Encode
 
 // Configuración de rutas de directorios y ficheros
 define("MODELS_FOLDER",  "models/");
+
 define("VIEWS_FOLDER", LOCAL_URL . "views/");
+define("FUNC", LOCAL_URL . "func/");
 define("TEMPLATES_FOLDER", LOCAL_URL . "views/template/");
 define("PARCIALS_FOLDER", LOCAL_URL . "views/partials/");
 define("CONTROLLERS_FOLDER", "controllers/");
 define("AUTOLOADER_FILE", "config/app/autoload.php");
 define("CONFIG_FILE", "config/config.php");
+
+
+define("PROFILE_IMAGE_FOLDER", PUBLIC_URL . "assets/img/profile/");
+define("POST_CONTENT_FOLDER", PUBLIC_URL . "assets/img/pub/");
+define("BANNER_CONTENT_FOLDER", PUBLIC_URL . "assets/img/banner/");
 // Dirección de Conexión
 define("CONNECTION_DIR", "config/app/connection.php");
 

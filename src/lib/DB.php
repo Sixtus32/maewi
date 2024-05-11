@@ -19,9 +19,14 @@ class DB
             ];
 
             $pdo = new PDO($connection, Constants::$USER, Constants::$PASSWORD, $options);
+            echo "<script> console.log('conexion realizada ✅') </script>";
             return $pdo;
         } catch (PDOException $e) {
             print_r('Error connection: ' . $e->getMessage());
         }
+    }
+
+    static function guideMessage($message){
+        echo "<script>console.log($message)</script>";
     }
 }

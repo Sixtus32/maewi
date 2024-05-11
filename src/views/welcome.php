@@ -27,7 +27,7 @@ include_once "./src/config/config.php";
     <script src="<?= PUBLIC_URL ?>assets/js/footer_date.js" defer></script>
 </head>
 <?php
-if (!isset($_SESSION['user_id'])) {
+if (!isset($_SESSION['unique_id'])) {
 ?>
 
     <body>

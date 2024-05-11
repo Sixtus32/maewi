@@ -3,11 +3,11 @@
 require 'vendor/autoload.php';
 error_reporting(E_ALL);
 
-use Sixtus\Maewi\controllers\Crud;
+use Sixtus\Maewi\controllers\CrudUser;
 
 
 
-$control = new Crud;
+$control = new CrudUser;
 
 if (isset($_REQUEST['op'])) {
     $op = $_REQUEST['op'];

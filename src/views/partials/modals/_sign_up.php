@@ -1,29 +1,28 @@
 <!-- Modal -->
 <section class="sign_popup form signup" id="sign-popup">
     <header>
-        <span>Iniciar Sessión</span>
+        <span>Iniciar Sesión</span>
         <div class="close" id="sign-close">
             <i class="ri-close-circle-line"></i>
         </div>
     </header>
     <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
+        <!-- Inicio del formulario -->
         <div class="error_text" id="error-text"></div>
         <div class="field input">
-            <label for="user_email">Correo Electronico</label>
-            <input type="text" name="user_email" id="user_email" placeholder="Introduzca su email" required>
+            <label for="user_email">Correo Electrónico</label>
+            <input type="text" name="user_email" id="user_email" placeholder="Introduzca su correo electrónico" required>
         </div>
         <div class="field input">
             <label for="user_password">Contraseña</label>
-            <input type="password" name="user_password" placeholder="Introduzca su contraseña" required>
+            <input type="password" name="user_password" id="user_password" placeholder="Introduzca su contraseña" required>
             <i class="ri-eye-line"></i>
         </div>
         <div class="field button">
-            <input type="submit" value="Continue con la diversión">
+            <input type="submit" value="Continuar con la diversión">
         </div>
+        <!-- Fin del formulario -->
     </form>
-    <!-- <div class="link">¿Aún no estas registrado?
-        <button id="sign-to-login">Registrate Ya</button>
-    </div> -->
 </section>
 
 <style>
@@ -44,8 +43,8 @@
         padding: 25px;
         border-radius: 15px;
         top: -150%;
-        width: 525px;
-        height: 32.5%;
+        width: 522px;
+        /* height: 44.5%; */
         opacity: 0;
         pointer-events: none;
         box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
@@ -152,7 +151,6 @@
         cursor: pointer;
         transform: translateY(-50%);
     }
-
 
     .form form .field i.active::before {
         color: #333;

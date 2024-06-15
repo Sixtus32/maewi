@@ -1,0 +1,66 @@
+            <!-- <?php
+            $sql = mysqli_query($conn, "SELECT * FROM us WHERE unique_id = {$_SESSION['unique_id']}");
+            if (mysqli_num_rows($sql) > 0) {
+                $row = mysqli_fetch_assoc($sql);
+            }
+            ?> -->
+
+
+                            <!-- <p><?php echo $_SESSION['account_status']; ?></p> -->
+
+
+
+                                            <?php
+                while ($rowC = $sqlB->fetch_array()) {
+                    $sqlD = $mysqli->query("SELECT * FROM archivos WHERE publicacion = '" . $rowC['id'] . "'");
+                    $rowD = $sqlD->fetch_array();
+                ?>
+                    <div class="p-pub <?php echo $rowD['filtro']; ?>" style="background-image: url('archivos/<?php echo $rowD['ruta']; ?>');"></div>
+                <?php } ?>
+
+                <?php ?>
+
+
+        <!-- <article class="card_item">
+            <header>
+                <div class="user_info">
+                    <a href="#" class="user_info_profile">
+                        <img class="user_image" src="<?= PUBLIC_URL ?>assets/img/home-user-image-5.jpg" alt="imagen del perfil">
+                        <div class="user_data">
+                            <p>@rebecaaa29</p>
+                            <span>[ Murcia ]</span>
+                        </div>
+                    </a>
+                </div>
+            </header>
+            <main style="position: relative;">
+                <img src="<?= PUBLIC_URL ?>assets/img/pub/netflix.jpg" alt="Imagen del evento">
+                <div class="event_info">
+                    <div class="event_title">
+                        <p class="event_title">Netflix y de Chill</p>
+                    </div>
+                    <div class="event_time">
+                        <span>12:20 PM - 01:45 AM</span>
+                    </div>
+                </div>
+                <div class="event_date">
+                    <span class="month">MAY</span>
+                    <span class="day">25</span>
+                </div>
+                <div class="event_icon">
+                    <i class="ri-lock-line"></i>
+                    <i class="ri-heart-2-line"></i>
+                    <i class="ri-money-dollar-circle-line"></i>
+                </div>
+                <div class="event_description">
+                    <p>
+                        Disfrutemos de unos snacks, bebidas y un ambiente acogedor 😜.
+                        <br>
+                        ¡Te espero!
+                    </p>
+                </div>
+            </main>
+            <footer>
+                <button>Participar</button>
+            </footer>
+        </article> -->

@@ -6,7 +6,7 @@
             <i class="ri-close-circle-line"></i>
         </div>
     </header>
-    <form name="registro" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data" autocomplete="off">
+    <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
         <div class="error_text" id="error-text"></div>
         <div class="name_details" id="name-details">
             <div class="field input">
@@ -29,7 +29,7 @@
         </div>
         <div class="field input">
             <label for="cpassword">Confirme su Contraseña</label>
-            <input type="password" name="cpassword" id="cpassword" placeholder="Introduzca su contraseña" required>
+            <input type="password" name="cpassword" id="cpassword" placeholder="Introduzca su contraseña" required autocomplete="new-password">
             <i class="ri-eye-line"></i>
         </div>
         <!-- <div class="field image upload_image">
@@ -44,9 +44,6 @@
         <div class="field button">
             <input type="submit" value="Registrarse">
         </div>
-        <!-- <div class="link">Ya tienes una cuenta?
-            <button id="login-to-sign">Inicie Sessión</button>
-        </div> -->
     </form>
 </section>
 
@@ -69,7 +66,7 @@
         border-radius: 15px;
         top: -150%;
         width: 525px;
-        height: 68%;
+        height: 580px;
         opacity: 0;
         pointer-events: none;
         box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);

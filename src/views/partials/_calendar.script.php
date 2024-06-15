@@ -1,4 +1,4 @@
-<?= require_once PUBLIC_URL . 'assets/js/cdn/index.global.min.js'; ?>
+<!-- <?= require_once PUBLIC_URL . 'assets/js/cdn/index.global.min.js'; ?>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
@@ -7,4 +7,4 @@
         });
         calendar.render();
     });
-</script>
+</script> -->

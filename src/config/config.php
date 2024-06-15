@@ -1,5 +1,7 @@
 <?php
-
+header("Access-Control-Allow-Origin: *"); // Permitir cualquier origen
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS"); // Métodos permitidos
+header("Access-Control-Allow-Headers: Content-Type, Authorization"); // Encabezados permitidos
 /**
  *  Configuraciones genéricas.
  */
@@ -11,7 +13,8 @@
  */
 // Nuestras URLs
 define("PUBLIC_URL", "/maewi_dev/public/");
-define("LOCAL_URL", "file:///C:/xampp/htdocs/maewi_dev/src/");
+define("LOCAL_URL", "file:///C:/wamp64/www/maewi_dev/src/");
+define("LOCAL_PUB", "file:///C:/wamp64/www/maewi_dev/public/");
 define("BASE_URL", "/maewi_dev/");
 define('URL', 'http://127.0.0.1/maewi_dev');
 define("BASE_URL_DEV", "http://127.0.0.1/maewi_dev/public/");
@@ -36,10 +39,10 @@ define("DB_CHARSET", "utf8");       // Caracteres Encode
 define("MODELS_FOLDER",  "models/");
 
 define("VIEWS_FOLDER", LOCAL_URL . "views/");
-define("FUNC", LOCAL_URL . "func/");
+define("FUNC", URL . "/src/func/");
 define("TEMPLATES_FOLDER", LOCAL_URL . "views/template/");
 define("PARCIALS_FOLDER", LOCAL_URL . "views/partials/");
-define("CONTROLLERS_FOLDER", "controllers/");
+define("CONTROLLERS_FOLDER", LOCAL_URL . "controllers/");
 define("AUTOLOADER_FILE", "config/app/autoload.php");
 define("CONFIG_FILE", "config/config.php");
 
@@ -81,3 +84,14 @@ $clienteIP = $_SERVER['REMOTE_ADDR'];
 $methodRequest = $_SERVER["REQUEST_METHOD"];
 // Obtener información sobre el archivo en ejecución.
 $filePath = $_SERVER["SCRIPT_FILENAME"];
+
+
+
+
+$mysqli = new mysqli("localhost", "root", "", "maewi_db");
+
+if ($mysqli->connect_errno) {
+    echo "Falló la conexion a la base de datos";
+}
+
+return $mysqli;

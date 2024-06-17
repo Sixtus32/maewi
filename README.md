@@ -2,6 +2,8 @@
 
 Bienvenido/a a nuestra plataforma de gestión de eventos y planes. Esta aplicación te permite organizar y participar en una variedad de eventos emocionantes y planes interesantes.
 
+PLATAFORMA DESARROLLADO PARA I.E.S RIBERA DE LOS MOLINOS.
+
 ## Características Principales
 
 - **Publicación de Eventos:** Los usuarios pueden publicar sus propios eventos y planes, especificando detalles como la fecha, hora, ubicación y descripción.

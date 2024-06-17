@@ -20,7 +20,7 @@ PLATAFORMA DESARROLLADO PARA I.E.S RIBERA DE LOS MOLINOS.
 
 ## Instalación y Configuración
 
-1. Clona este repositorio en tu máquina local ['/xampp/htdocs'].
+1. Clona este repositorio en tu máquina local ['/wampp/wwww/'].
 2. Actualiza los `namespace`.
 3. Descarga la base de datos.
 4. Configura la base de datos.
